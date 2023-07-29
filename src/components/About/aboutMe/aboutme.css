@@ -1,0 +1,6 @@
+@media (max-width: 380px){
+    .sobre-mim{
+        font-size: 100% !important;
+        min-width: 300px
+    }
+}

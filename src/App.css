@@ -1,0 +1,42 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    --background-black-t: rgba(32, 32, 32, 0.500);
+    --border-red-t: rgba(206, 108, 108, 0.2);
+    --background-hover-black: rgba(32, 32, 32, 0.900);
+}
+
+
+.all{
+    background-color: black;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+}
+
+.backimg{
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: auto;
+    filter: blur(12px) brightness(40%);
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+.conteudo{
+    background-image: url('/src/assets/grid.svg');
+    color: whitesmoke;
+    position: relative;
+    z-index: 2;
+}
+
+.content1-site{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

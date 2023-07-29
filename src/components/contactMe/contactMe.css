@@ -1,0 +1,46 @@
+.link-contato{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.089);
+    background-color: var(--background-black-t);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link-contato p{
+    font-size: 130% !important;
+}
+
+.icon-contato{
+    font-size: 250%;
+}
+
+.link-rede{
+    display: flex;
+    position: absolute;
+    width: max-content;
+    bottom: 0;
+    opacity: 0;
+    margin-bottom: -1.75rem;
+    transition: all .4s ease-in-out;
+}
+
+.link-contato:hover ~ p{
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .link-contato{
+        margin: 10px;
+    }
+    .link-contato:hover ~ p{
+        opacity: 0 !important;
+    }
+}
